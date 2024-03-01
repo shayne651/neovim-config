@@ -15,13 +15,7 @@ return require('packer').startup(function(use)
   }
 
   -- Setting colour scheme
-  use({
-	  'folke/tokyonight.nvim',
-	  as = 'tokyonight',
-	  config = function()
-		  vim.cmd('colorscheme tokyonight-storm')
-	  end
-  })
+  use { 'catppuccin/nvim', as = 'catppuccin' }
 
   -- Treesitter setup
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
